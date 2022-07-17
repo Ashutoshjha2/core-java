@@ -1,0 +1,58 @@
+package com.atmsystem;
+
+public class MainAccount {
+	private String bank_name;
+	private long card_no;
+	private String card_holder_name;
+	private String expiry_date;
+	private int cvv_no;
+	public String getBank_name() {
+		return bank_name;
+	}
+	public void setBank_name(String bank_name) {
+		this.bank_name = bank_name;
+	}
+	public long getCard_no() {
+		return card_no;
+	}
+	public void setCard_no(long card_no) {
+		this.card_no = card_no;
+	}
+	public String getCard_holder_name() {
+		return card_holder_name;
+	}
+	public void setCard_holder_name(String card_holder_name) {
+		this.card_holder_name = card_holder_name;
+	}
+	public String getExpiry_date() {
+		return expiry_date;
+	}
+	public void setExpiry_date(String expiry_date) {
+		this.expiry_date = expiry_date;
+	}
+	public int getCvv_no() {
+		return cvv_no;
+	}
+	public void setCvv_no(int cvv_no) {
+		this.cvv_no = cvv_no;
+	}
+	public MainAccount(String bank_name, long card_no, String card_holder_name, String expiry_date, int cvv_no) {
+		super();
+		this.bank_name = bank_name;
+		this.card_no = card_no;
+		this.card_holder_name = card_holder_name;
+		this.expiry_date = expiry_date;
+		this.cvv_no = cvv_no;
+	}
+	public MainAccount() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	@Override
+	public String toString() {
+		return "MainAccount [bank_name=" + bank_name + ", card_no=" + card_no + ", card_holder_name=" + card_holder_name
+				+ ", expiry_date=" + expiry_date + ", cvv_no=" + cvv_no + "]";
+	}
+
+
+}
